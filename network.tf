@@ -16,6 +16,6 @@ resource "azurerm_public_ip" "webserver_ip" {
   name                = "${var.labelPrefix}-public-ip"
   location            = azurerm_resource_group.project_rg.location
   resource_group_name = azurerm_resource_group.project_rg.name
-  allocation_method   = "Dynamic"
-  sku                 = "Basic"
+  allocation_method   = "Static"
+  sku                 = "Standard"
 }
