@@ -1,7 +1,7 @@
 variable "labelPrefix" {
   description = "Prefix for all resource labels"
   type        = string
-  default     = "myapp"
+  default     = "olivelab6"
 }
 variable "region" {
   description = "Azure region to deploy resources"
